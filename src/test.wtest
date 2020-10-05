@@ -1,0 +1,10 @@
+//import objetos.*
+import clases.*
+
+only test "ahorros de los pibes" {
+	juan.cobrar(1000)
+	pepe.cobrar(2000)
+	pepe.gastar(100)
+	assert.equals(1000, juan.ahorros())
+	assert.equals(1900, pepe.ahorros())
+}
