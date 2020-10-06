@@ -1,6 +1,6 @@
-
+// Clase: define el comportamiento que va a tener los objetos instancias
 class CuentaCorriente {
-	var property saldo = 0
+	var property saldo = 0 // Valor por defecto (si no se especifica en la instanciación)
 	method depositar(monto) { saldo += monto }
 	method extraer(monto) { saldo -= monto }
 }
@@ -10,8 +10,10 @@ object colchon {
 	method guardar(monto) { dinero += monto }
 }
 
-object juan {
-	const miCuenta = new CuentaCorriente()
+//object juan 
+class PersonaBancarizada {
+	const nombre
+	const miCuenta = new CuentaCorriente() // Instanciar = Crear un objeto a partir de una clase
 	method cobrar(monto) { 
 		miCuenta.depositar(monto)
 	}
@@ -20,6 +22,12 @@ object juan {
 	}
 	method ahorros() { 
 		return miCuenta.saldo()
+	}
+	method salirAComer() {
+		self.gastar(500)
+	}
+	method nombre() {
+		return nombre
 	}
 }
 
