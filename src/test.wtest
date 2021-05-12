@@ -1,22 +1,22 @@
 import clases.*
 
 describe "Test de las personas" {
-	const juan = new PersonaBancarizada(nombre = "Juan")
+	const rebeca = new PersonaBancarizada(nombre = "Juan")
 
 	fixture {
-		juan.cobrar(1000)
+		rebeca.cobrar(1000)
 	}
 
-	test "ahorros de los pibes" {
+	test "ahorros de les pibes" {
 		pepe.cobrar(2000)
 		pepe.gastar(100)
-		assert.equals(1000, juan.ahorros())
+		assert.equals(1000, rebeca.ahorros())
 		assert.equals(1900, pepe.ahorros())
 	}
 
 	test "ir a comer" {
-		juan.salirAComer()
-		assert.equals(500, juan.ahorros())
+		rebeca.salirAComer()
+		assert.equals(500, rebeca.ahorros())
 	}
 
 }

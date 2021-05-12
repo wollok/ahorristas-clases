@@ -10,19 +10,6 @@ object colchon {
 	method guardar(monto) { dinero += monto }
 }
 
-object juan {
-	const miCuenta = cuentaCorriente
-	method cobrar(monto) { 
-		miCuenta.depositar(monto)
-	}
-	method gastar(monto) { 
-		miCuenta.extraer(monto)
-	}
-	method ahorros() { 
-		return miCuenta.saldo()
-	}
-}
-
 object pepe {
 	const cajaFuerte = colchon
 	const miCuenta = cuentaCorriente
@@ -36,5 +23,20 @@ object pepe {
 		return miCuenta.saldo() + cajaFuerte.dinero()
 	}
 }
+//en homenaje a Rebeca Cherep de Guber 
+//https://es.wikipedia.org/wiki/Rebeca_Guber
+object rebeca {
+	const miCuenta = cuentaCorriente
+	method cobrar(monto) { 
+		miCuenta.depositar(monto)
+	}
+	method gastar(monto) { 
+		miCuenta.extraer(monto)
+	}
+	method ahorros() { 
+		return miCuenta.saldo()
+	}
+}
+
 
 
