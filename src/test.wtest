@@ -3,7 +3,7 @@ import clases.*
 
 
 describe "Test de las personas" {
-	const rebeca = new PersonaBancarizada(nombre = "Juan")
+	const rebeca = new PersonaBancarizada(nombre = "Rebeca")
 
  	method initialize() {
  		rebeca.cobrar(1000)
