@@ -1,11 +1,13 @@
 import clases.*
 
+
+
 describe "Test de las personas" {
 	const rebeca = new PersonaBancarizada(nombre = "Juan")
 
-	fixture {
-		rebeca.cobrar(1000)
-	}
+ 	method initialize() {
+ 		rebeca.cobrar(1000)
+ 	}
 
 	test "ahorros de les pibes" {
 		pepe.cobrar(2000)
